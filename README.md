@@ -13,21 +13,7 @@ What's new
 3. Number of question will display result
 4. Using shared preference to keep value
 
-//tosavehighscore
- public void setHighscore(int score){
-        final SharedPreferences sharedPreferences = getSharedPreferences("Result", Context.MODE_PRIVATE);
-        int highScore=sharedPreferences.getInt(result,0);
-        if(score > highScore){
-            SharedPreferences.Editor editor=sharedPreferences.edit();
-            editor.putInt(result,score);
-            editor.commit();
-        }
-    }
-//get
-    public int getHighScore(){
-        final SharedPreferences sharedPreferences = getSharedPreferences("Result", Context.MODE_PRIVATE);
-        return sharedPreferences.getInt(result,score);
-    }
+
 
 #### Screenshots ####
 
